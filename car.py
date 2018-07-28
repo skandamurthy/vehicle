@@ -9,6 +9,7 @@ class Car(Vehicle):
 		self.steering_wheel =steering_wheel
 		self.seat_belt = seat_belt
 		self.audio_player=audio_player
+		super().__init__(no_of_wheels,speed,weight,milage,colour)
 
 	def drift(self):
 		print("Car's Drifting")
